@@ -1,0 +1,108 @@
+:root {
+    --2rem: 2rem;
+    --1rem: 1rem;
+}
+html {
+    background-color: #eeeeeeff;
+}
+.headline {
+    height: 82px;
+    padding: 1rem;
+}
+a {
+    color: black;
+}
+.logo {
+    margin-right: var(--2rem);
+}
+.logo a:hover {
+    text-decoration: none;
+}
+.logo a{
+color: black;
+font-weight: 600;
+font-size: 1.2rem;
+}
+.inline {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0 6%;
+}
+.links {
+    display: flex;
+}
+.links p {
+    margin-right: var(--2rem);
+}
+.links a {
+    margin-left: var(--1rem);
+}
+main {
+    margin: 0 6%;
+}
+.ex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vh;
+    width: 100%;
+    height: 40rem;
+}
+
+.ex::before {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(./img/main-cover.jpg);
+    filter: brightness(70%);
+    z-index: -1;
+}
+.card {
+    display: block; 
+    max-width: 100%;
+    border-radius: 1rem;
+    background-color: white;
+    width: 17rem;
+    height: 100%;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.card img {
+    display: block;
+    max-width: 100%;
+    border-radius: .5rem;
+    width: 100%;
+    height: auto;
+}
+.metro {
+    display: flex;
+}
+.metro svg {
+    margin-right: .2rem;
+}
+.text-card {
+    margin-top: .5rem;
+}
+.predloz {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding: 0 6%;
+}
