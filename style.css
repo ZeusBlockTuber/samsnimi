@@ -77,7 +77,7 @@ main {
     bottom: 0;
     left: 0;
     background-size: cover;
-    background-image: url(./img/main-cover.jpg);
+    background-image: url(https://njrzbt.github.io/octoimg/samsnimi/main-cover.jpg);
     background-position: 50%;
     filter: brightness(70%);
     z-index: -1;
