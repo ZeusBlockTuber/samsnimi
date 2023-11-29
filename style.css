@@ -1,16 +1,24 @@
 :root {
     --2rem: 2rem;
     --1rem: 1rem;
+    --black: #0c0b0b;
+    --white: #f9f2f2;
 }
 html {
-    background-color: #eeeeeeff;
+    background-color: var(--white);
+}
+h1 {
+    font-weight: 600;
+}
+body {
+    color: var(--black);
 }
 .headline {
     height: 82px;
-    padding: 1rem;
+    padding: var( --1rem) 0;
 }
 a {
-    color: black;
+    color: var(--black);
 }
 .logo {
     margin-right: var(--2rem);
@@ -19,9 +27,17 @@ a {
     text-decoration: none;
 }
 .logo a{
-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+color: var(--black);
 font-weight: 600;
 font-size: 1.2rem;
+}
+.logo a img {
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
 }
 .inline {
     display: flex;
@@ -46,15 +62,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 5vh;
+    color: var(--white);
+    font-size: 230%;
     width: 100%;
     height: 40rem;
 }
-
 .ex::before {
-    margin-bottom: 2rem;
-    border-radius: 1rem;
+    margin-bottom: var(--1rem);
+    border-radius: var(--2rem);
     content: "";
     position: absolute;
     top: 0;
@@ -63,46 +78,70 @@ main {
     left: 0;
     background-size: cover;
     background-image: url(./img/main-cover.jpg);
+    background-position: 50%;
     filter: brightness(70%);
     z-index: -1;
 }
 .card {
     display: block; 
     max-width: 100%;
-    border-radius: 1rem;
-    background-color: white;
-    width: 17rem;
-    height: 100%;
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    border-radius: var(--1rem);
+    background-color: #fffafa;
+    width: 18rem;
+    height: auto;
+    /* padding: .5rem; */
+    margin-right: var(--1rem);
+    margin-top: var(--1rem);
+    cursor: pointer;
+    border: 1px solid #c9d1e5;
 }
 .card img {
     display: block;
     max-width: 100%;
-    border-radius: .5rem;
+    border-radius: 1rem 1rem 0 0;
     width: 100%;
-    height: auto;
+    height: 204px;
 }
 .metro {
     display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+#room-cor {
+    margin-top: .5rem;
 }
 .metro svg {
     margin-right: .2rem;
 }
 .text-card {
-    margin-top: .5rem;
+    padding: 0 var(--1rem);
+    margin-top: var(--1rem);
+    margin-bottom: 13px;
 }
 .predloz {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: var(--1rem);
 }
 footer {
+    width: auto;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: var(--white);
     height: 100px;
     padding: 0 6%;
+    border-radius: 1rem 1rem 0 0;
+}
+svg path {
+    width: 100%;
+    height: 100%;
+}
+.down {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0 var(--1rem);
+    margin-bottom: 17px;
+    height: 70px;
 }
