@@ -41,6 +41,8 @@ font-size: 1.2rem;
 }
 .inline {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
     padding: 0 6%;
@@ -56,6 +58,9 @@ font-size: 1.2rem;
 }
 main {
     margin: 0 6%;
+    min-height: calc(81.1vh - (2 * 20px)); /* Учитываем отступы (20px) по вертикали */
+    box-sizing: border-box;
+    padding: 20px;
 }
 .ex {
     position: relative;
@@ -79,11 +84,10 @@ main {
     background-size: cover;
     background-image: url(https://njrzbt.github.io/octoimg/samsnimi/main-cover.jpg);
     background-position: 50%;
-    filter: brightness(70%);
     z-index: -1;
 }
 .card {
-    display: block; 
+    display: block;
     max-width: 100%;
     border-radius: var(--1rem);
     background-color: #fffafa;
@@ -128,7 +132,6 @@ footer {
     width: auto;
     display: flex;
     align-items: center;
-    background-color: var(--white);
     height: 100px;
     padding: 0 6%;
     border-radius: 1rem 1rem 0 0;
@@ -144,4 +147,32 @@ svg path {
     padding: 0 var(--1rem);
     margin-bottom: 17px;
     height: 70px;
+}
+.theme-switch {
+    cursor: pointer;
+    margin-left: var(--1rem);
+    user-select: none;
+}
+.light-theme {
+    background-color: var(--white);
+    color: var(--black);
+}
+.dark-theme {
+    background-color: var(--black);
+    color: var(--white);
+}
+.dark-theme .card {
+    background-color: #101011;
+    border: 1px solid #202022;
+}
+.dark-theme a {
+    color: var(--white);
+}
+.text-used {
+    display: flex;
+}
+.text-used a {
+    margin-left: .1rem;
+    color: #ff6666;
+    font-weight: 600;
 }
